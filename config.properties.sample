@@ -1,0 +1,5 @@
+token=YOUR_TOKEN_HERE
+tz=America/New_York
+start_date=2023-08-02
+#Time in seconds
+update_interval=15
