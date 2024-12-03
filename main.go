@@ -199,7 +199,7 @@ func main() {
 
 				for _, port := range deviceData.DeviceInfo.Ports {
 					if port.Online == 1 {
-						formattedOutput = fmt.Sprintf("%s: %d%%", port.PortName, port.CurMode*10)
+						formattedOutput = fmt.Sprintf("%s: %d%%", port.PortName, port.Speak*10)
 						err = ioutil.WriteFile("port_"+strconv.Itoa(port.Port)+".txt", []byte(formattedOutput), 0644)
 						if err != nil {
 							log.Printf("Error writing to file: %v", err)
